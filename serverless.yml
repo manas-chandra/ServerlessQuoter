@@ -6,8 +6,16 @@ provider:
   region: us-west-2
   timeout: 10 # You set a timeout of 10 seconds for the functions
   iam:
-    role: arn:aws:iam::586496223811:role/serverlessQuote # Enter your Arn role here
+    role: arn:aws:iam::748225784484:role/serverlessQuote # Enter your Arn role here
   memorySize: 512
+
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    fileName: requirements.txt
+    pythonBin: /opt/homebrew/bin/python3
 
 functions:
   quote_function:

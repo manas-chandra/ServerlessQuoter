@@ -1,0 +1,7 @@
+certifi==2023.7.22
+cffi==1.15.1
+docutils==0.20.1
+gazpacho==1.1
+pycparser==2.21
+six==1.16.0
+quoters==0.30
